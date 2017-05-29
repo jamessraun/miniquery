@@ -16,6 +16,7 @@
       }
     </style>
     <script src="lib/miniquery.js"></script>
+
   </head>
 
   <body>
@@ -45,10 +46,8 @@
     function demoSweetSelector() {
       console.log(`SweetSelector.select('#eyed')`)
       console.log(SweetSelector.select('#eyed'))
-
       console.log(`SweetSelector.select('.klass')`)
       console.log(SweetSelector.select('.klass'))
-
       console.log(`SweetSelector.select('a')`)
       console.log(SweetSelector.select('a'))
     }
@@ -68,7 +67,7 @@
 
     function demoAjax() {
       AjaxWrapper.request({
-        url: 'http://localhost:3000/',
+        url: 'http://swapi.co/api/people/1/',
         type: 'GET',
         success: function(data) {
           console.log("Success: ", data)
